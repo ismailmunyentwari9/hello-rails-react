@@ -1,5 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  namespace :api do
-    get '/random-greeting', to: 'greetings#random_greeting'
-  end
+  get '/api/greetings', to: 'api/greetings#random_greeting', as: 'api_greetings'
 end
